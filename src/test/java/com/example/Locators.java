@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Locators {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver.", "/Users/husrev/Documents/chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -27,6 +27,7 @@ public class Locators {
         driver.findElement(By.linkText("Forgot your password?")).click();
 
 
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("husrev");
         driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("husrev");
         driver.findElement(By.xpath("//input[@placeholder='Email']")).clear();
@@ -36,8 +37,10 @@ public class Locators {
 
         System.out.println(driver.findElement(By.xpath("//form/h2")).getText());
 
-
+        // driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys(driver.findElement(By.xpath("//form/h2")).getText());
 
 
     }
+
+
 }
