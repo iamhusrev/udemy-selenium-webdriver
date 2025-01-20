@@ -11,7 +11,7 @@ public class LocatorsChrome {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver.", "src/test/resources/driver/mac/chromedriver");
+        System.setProperty("webdriver.chrome.driver.", "src/test/resources/driver/chromedriver");
         WebDriver driver = new ChromeDriver();
 
 

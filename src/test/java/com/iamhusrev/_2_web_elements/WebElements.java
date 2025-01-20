@@ -11,7 +11,7 @@ public class WebElements {
     public static void main(String[] args) throws InterruptedException {
 
         String url = "https://rahulshettyacademy.com/dropdownsPractise/#";
-        System.setProperty("webdriver.chrome.driver.", "src/test/resources/driver/mac/chromedriver");
+        System.setProperty("webdriver.chrome.driver.", "src/test/resources/driver/chromedriver");
 
 
         WebDriver driver = new ChromeDriver();
