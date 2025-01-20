@@ -1,18 +1,18 @@
-package com.iamhusrev;
+package com.iamhusrev._1_locators;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
-public class LocatorsChrome {
+public class LocatorsEdge {
 
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver.", "src/test/resources/driver/mac/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.edge.driver.", "src/test/resources/driver/msedgedriver");
+        WebDriver driver = new EdgeDriver();
 
 
         String username = "rahul";

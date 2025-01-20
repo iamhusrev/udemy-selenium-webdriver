@@ -1,4 +1,4 @@
-package com.iamhusrev;
+package com.iamhusrev._1_locators;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -12,7 +12,6 @@ public class Locators {
 
         System.setProperty("webdriver.chrome.driver.", "/Users/husrev/Documents/chromedriver");
         WebDriver driver = new ChromeDriver();
-
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 

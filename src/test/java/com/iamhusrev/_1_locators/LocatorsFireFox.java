@@ -1,18 +1,18 @@
-package com.iamhusrev;
+package com.iamhusrev._1_locators;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-public class LocatorsEdge {
+public class LocatorsFireFox {
 
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.edge.driver.", "src/test/resources/driver/msedgedriver");
-        WebDriver driver = new EdgeDriver();
+        System.setProperty("webdriver.gecko.driver.", "src/test/resources/driver/geckodriver");
+        WebDriver driver = new FirefoxDriver();
 
 
         String username = "rahul";
